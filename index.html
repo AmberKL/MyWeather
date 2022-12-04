@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MyWeather</title>
+        <style>
+            .button:hover{
+                color:darkgrey;
+            }
+            .button:active{
+                color:yellow;
+            }
+
+            .current:hover{
+                color:darkgrey;
+            }
+            
+            .current:active{
+                color:yellow;
+            }
+        </style>
+    </head>
+<link rel="stylesheet" href="./style.css">
+<script src="./script.js" defer></script>
+
+    <body style="
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0px;
+    background-color:rgb(0, 170, 255); 
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(255, 255, 255);
+    ">
+
+    
+        <div class="box" style="
+        background: rgb(0, 63, 251);
+        padding:40px;
+        border-radius:80px;
+        border-color:black;
+        height:50%;
+        min-height:225px;
+        max-height:50px;
+        width:20%;
+        min-width:225px;
+        max-width:500px;
+        margin:1em;
+        ">
+
+        <div class="search" style="
+        display:flex;
+        justify-content:space-evenly;
+        align-items:center;
+        color:black;
+        
+        ">
+            <input id="city" type="text" class="search bar" placeholder="City" style="
+            border-radius: 10px;
+            border-color:rgb(0, 0, 0);
+            ">
+
+         <button type="button" class="search button" style="
+            display:inline-flex;
+            background:lightgrey;
+            border-radius:5px;
+            border-color:rgb(0, 0, 0);
+            cursor:pointer;
+            ">
+                <span class="button-icon">
+                <ion-icon name="cloud-outline"></ion-icon>
+                </span>
+            </button>
+        
+
+        <!-- <button type="button" class="search current" style="
+            display:inline-flex;
+            background:lightgrey;
+            border-radius:5px;
+            border-color:rgb(0, 0, 0);
+            cursor:pointer;
+            ">
+                <span class="button-icon">
+                    <ion-icon name="pin-outline"></ion-icon>
+                </span>
+            </button> -->
+        </div>
+    
+
+
+
+        <div class="weather">
+            <h3 class="city" style="display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            ">
+            Weather at Home</h3>
+
+            <h1 class="temp" style="display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
+            ">
+            30°</h1>
+
+            <div class="description" style="
+             align-items: center;
+            justify-content: center;
+            text-align: center;
+            text-transform: capitalize;
+            ">
+            Breezy/Cloudy/Sunny/Rain</div>
+        
+
+        
+        </div>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="/js/plugins/openWeather.js"></script>
+    <script src="app.js"></script>
+
+</html>
